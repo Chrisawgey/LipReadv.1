@@ -1,4 +1,6 @@
+import { useState, useEffect } from "react";
 import img from "../assets/image.png";
+import img2 from "../assets/image2.png";
 import "./Landing.css";
 import logo1 from "./logos/css.svg";
 import logo2 from "./logos/html.svg";
@@ -7,7 +9,20 @@ import logo4 from "./logos/react.svg";
 import logo5 from "./logos/vite.svg";
 import logo6 from "./logos/git.svg";
 
+const images = [{ src: img }, { src: img2 }];
 export default function Landing() {
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentImageIndex(
+                (prevIndex) => (prevIndex + 1) % images.length,
+            );
+        }, 7000);
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <div className="landing">
             <nav className="nav-bar">
@@ -35,11 +50,25 @@ export default function Landing() {
                         <button>GitHub</button>
                     </div>
                 </div>
+                {/* Right here make the transition were the image slowly disapears and the new image reappears */}
                 <div className="right-main-right">
-                    <img src={img} alt="" />
+                    <div className="image-container">
+                        {images.map((image, index) => (
+                            <img
+                                key={index}
+                                src={image.src}
+                                className={
+                                    index === currentImageIndex
+                                        ? "fade-in"
+                                        : "fade-out"
+                                }
+                            />
+                        ))}
+                    </div>
                 </div>
             </section>
             <div className="logos">
+                <p>TRUSTED BY THE WORLD'S LEADING ORGANIZATIONS</p>
                 <div className="logos-slide">
                     <img src={logo1} />
                     <img src={logo2} />
