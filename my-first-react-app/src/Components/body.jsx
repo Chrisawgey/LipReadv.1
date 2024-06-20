@@ -56,7 +56,7 @@ export default function Body() {
     };
 
     const textInsideRectangleStyle = {
-        fontSize: '14px',                    // Set font size for text inside rectangles
+        fontSize: '18px',                    // Set font size for text inside rectangles
         textAlign: 'center',                 // Center align text inside rectangles
         marginTop: '20px',                   // Adjust top margin for proper positioning
     };
