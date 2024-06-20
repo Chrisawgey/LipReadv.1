@@ -19,7 +19,7 @@ export default function Body() {
     const gridContainerStyle = {
       display: 'flex',                    // Use flexbox for a row layout
       justifyContent: 'center',           // Center align items horizontally
-      marginTop: '80px',                  // Optional: Adjust top margin for spacing
+      marginTop: '25px',                  // Optional: Adjust top margin for spacing
       flexWrap: 'wrap',                   // Enable wrapping to handle multiple rows
     };
   
@@ -59,8 +59,8 @@ export default function Body() {
       backgroundColor: '#1E3A8A',         // Dark blue background color
       color: '#FFFFFF',                   // White text color
       padding: '15px 80px',               // Padding inside the button
-      marginTop: '40px',                  // Top margin for spacing
-      borderRadius: '20px',                // Border radius
+      marginTop: '30px',                  // Top margin for spacing
+      borderRadius: '50px',                // Border radius
       border: 'none',                     // No border
       cursor: 'pointer',                  // Pointer cursor on hover
       transition: 'background-color 0.3s',  // Smooth transition for background color
