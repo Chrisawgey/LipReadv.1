@@ -1,0 +1,31 @@
+.nav-bar {
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px 15px 20px;
+    border: 1px solid white;
+}
+.left {
+    display: flex;
+    gap: 40px;
+}
+.left ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+section {
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .left-main-right {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+.left-main-right h2 {
+    font-size: 3rem;
+}

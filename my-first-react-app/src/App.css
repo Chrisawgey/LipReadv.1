@@ -2,15 +2,20 @@
     margin: 0px;
     padding: 0px;
 }
-.app {
-    width: 100%;
-    height: 100vh;
-}
-.landing {
-    background-color: black;
-    display: flex;
-}
+
 .nav-bar {
+    font-size: 1.5rem;
+    font-weight: 500;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 15px 20px 15px 20px;
+}
+.left {
+    display: flex;
+    gap: 40px;
+}
+.left ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
 }
