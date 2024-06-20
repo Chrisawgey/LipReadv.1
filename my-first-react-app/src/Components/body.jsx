@@ -41,7 +41,7 @@ export default function Body() {
     const circleStyle = {
       width: '40px',                      // Diameter of the circle
       height: '40px',
-      backgroundColor: '#4CAF50',         // Green background color
+      backgroundColor: '#e1ff25',         // Green background color
       borderRadius: '50%',                // Make it a circle
       position: 'absolute',               // Position absolute for placement inside rectangle
       top: '10px',                        // Adjust top position for circle
@@ -49,7 +49,7 @@ export default function Body() {
       display: 'flex',                    // Use flexbox for centering text inside circle
       justifyContent: 'center',           // Center align items horizontally
       alignItems: 'center',               // Center align items vertically
-      color: '#FFFFFF',                   // White text color
+      color: '#000000',                   // White text color
       fontSize: '16px',                   // Font size of text inside circle
       transition: 'transform 0.2s ease-in-out',  // Smooth transition for scale effect
     };
@@ -59,7 +59,7 @@ export default function Body() {
       backgroundColor: '#1E3A8A',         // Dark blue background color
       color: '#FFFFFF',                   // White text color
       padding: '15px 80px',               // Padding inside the button
-      marginTop: '30px',                  // Top margin for spacing
+      marginTop: '40px',                  // Top margin for spacing
       borderRadius: '50px',                // Border radius
       border: 'none',                     // No border
       cursor: 'pointer',                  // Pointer cursor on hover
