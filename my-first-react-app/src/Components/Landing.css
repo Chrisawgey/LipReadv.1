@@ -28,4 +28,5 @@ section .left-main-right {
 }
 .left-main-right h2 {
     font-size: 3rem;
+    color: var(--dark-blue);
 }

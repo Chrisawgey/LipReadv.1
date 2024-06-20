@@ -23,3 +23,17 @@ body,
     width: 100%;
     height: 100%;
 }
+:root {
+    --dark-blue: #111f68;
+    --bright-blue: #042aff;
+    --light-grey: #f3f3f3;
+    --dark-grey: #9e9e9e;
+    --white: white;
+    --blue: #0725ce;
+    --neon-yellow: #e1ff25;
+    --grey: #ccc;
+    --neon-pink: #ff64da;
+    --aquamarine: #0bdbeb;
+    --black: black;
+    --semantic-error: #ff2055;
+}
