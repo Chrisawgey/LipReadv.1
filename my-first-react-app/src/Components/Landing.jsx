@@ -1,5 +1,12 @@
 import img from "../assets/image.png";
 import "./Landing.css";
+import logo1 from "./logos/css.svg";
+import logo2 from "./logos/html.svg";
+import logo3 from "./logos/opencv.svg";
+import logo4 from "./logos/react.svg";
+import logo5 from "./logos/vite.svg";
+import logo6 from "./logos/git.svg";
+
 export default function Landing() {
     return (
         <div className="landing">
@@ -32,6 +39,22 @@ export default function Landing() {
                     <img src={img} alt="" />
                 </div>
             </section>
+            <div className="logos">
+                <div className="logos-slide">
+                    <img src={logo1} />
+                    <img src={logo2} />
+                    <img src={logo3} />
+                    <img src={logo4} />
+                    <img src={logo5} />
+                    <img src={logo6} />
+                    <img src={logo1} />
+                    <img src={logo2} />
+                    <img src={logo3} />
+                    <img src={logo4} />
+                    <img src={logo5} />
+                    <img src={logo6} />
+                </div>
+            </div>
         </div>
     );
 }
