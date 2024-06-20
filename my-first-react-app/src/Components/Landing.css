@@ -5,6 +5,8 @@
     justify-content: space-between;
     padding: 15px 20px 15px 20px;
     border: 1px solid white;
+    background-color: white;
+    color: var(--dark-blue);
 }
 .left {
     display: flex;
@@ -16,17 +18,39 @@
     gap: 10px;
 }
 section {
+    background-color: white;
     border: 1px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+section p {
+    color: var(--dark-blue);
+    font-size: 1.2rem;
+}
 section .left-main-right {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 500px;
 }
 .left-main-right h2 {
-    font-size: 3rem;
+    font-size: 3.2rem;
     color: var(--dark-blue);
+    line-height: 1.2;
+}
+button {
+    border: none;
+    border-radius: 50px;
+    padding: 12px 50px 12px 50px;
+    font-size: 1.2rem;
+}
+.button-container button:first-child {
+    background-color: #111f68;
+    font-weight: 600;
+    margin-right: 20px;
+}
+.button-container button:last-child {
+    background-color: transparent;
+    color: var(--dark-blue);
+    border: 1px solid var(--dark-blue);
 }
