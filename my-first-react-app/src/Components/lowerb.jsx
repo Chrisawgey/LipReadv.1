@@ -31,9 +31,9 @@ export default function BodyTwo() {
     return (
         <div id="bodyTwo" className="bodyTwo">
             <nav className="bodyTwo-navbar">
-                <div className={`bodyTwo-nav-item ${currentSection === 1 ? 'active' : ''}`}>Example 1</div>
-                <div className={`bodyTwo-nav-item ${currentSection === 2 ? 'active' : ''}`}>Example 2</div>
-                <div className={`bodyTwo-nav-item ${currentSection === 3 ? 'active' : ''}`}>Example 3</div>
+                <div className={`bodyTwo-nav-item ${currentSection === 1 ? 'active' : ''}`}>Example</div>
+                <div className={`bodyTwo-nav-item ${currentSection === 2 ? 'active' : ''}`}>Example</div>
+                <div className={`bodyTwo-nav-item ${currentSection === 3 ? 'active' : ''}`}>Example</div>
             </nav>
             <div className="bodyTwo-content">
                 <div className="bodyTwo-text-container">
