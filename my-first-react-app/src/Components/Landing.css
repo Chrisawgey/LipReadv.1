@@ -23,14 +23,22 @@
         #ffffff 0%,
         rgba(255, 255, 255, 0) 100%
     ); /* White gradient on bottom */
-    background: linear-gradient(
-        to right,
-        var(--aquamarine) 0%,
-        var(--blend-color-1) 25%,
-        var(--blend-color-2) 50%,
-        var(--blend-color-3) 75%,
-        var(--neon-pink) 100%
+    background-image: linear-gradient(
+        to bottom,
+        #ffffff,
+        #eae6ff,
+        #d5ceff,
+        #beb6fe,
+        #a79efd,
+        #9b8ffe,
+        #9080ff,
+        #8570ff,
+        #8863ff,
+        #8e53ff,
+        #953fff,
+        #9e1fff
     );
+
     border: 1px solid white;
     display: flex;
     justify-content: center;
