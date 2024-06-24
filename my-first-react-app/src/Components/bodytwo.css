@@ -69,7 +69,7 @@
 #bodyTwo .bodyTwo-image-container {
     flex: 1;
     position: sticky;
-    top: 100px;
+    top: 150px;
     max-width: 50%; /* Ensure the image container takes up half the space */
     height: 500px;
     display: flex;
