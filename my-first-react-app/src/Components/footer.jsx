@@ -1,7 +1,7 @@
-import React from 'react';
+
 import gitlogo from './assets/githublogo.png'; 
 import iraplogo from './assets/iraplogo.png'; 
-import './Footer.css'; // Import the CSS files
+import './Footer.css'; // Import the CSS file
 
 function Footer() {
     return (
