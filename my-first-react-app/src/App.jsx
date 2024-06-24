@@ -13,7 +13,7 @@ function App() {
             <Body />
             <Landingtwo></Landingtwo>
             <BodyTwo />
-            <Footer></Footer>
+            <Footer />
         </div>
     );
 }

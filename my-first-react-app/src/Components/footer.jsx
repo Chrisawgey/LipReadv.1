@@ -1,4 +1,7 @@
 import "./footer.css"; // Import the CSS file
+import gitlogo from "../assets/githublogo.png";
+import iraplogo from "../assets/iraplogo.png";
+import "../Components/footer.css"; // Import the CSS file
 
 export default function Footer() {
     return (
