@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './bodytwo.css';
-import labelsImage from '../assets/labels.jpg';
-import resultsImage from '../assets/results.png';
+import labelsImage from '../assets/train_batch1.jpg';
+import resultsImage from '../assets/lipss.png';
 import clusteringImage from '../assets/clustering image into two clusters using kmeans.png';
 
 export default function BodyTwo() {
