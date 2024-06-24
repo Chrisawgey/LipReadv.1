@@ -4,6 +4,7 @@ import Landing from "./Components/Landing";
 import Body from "./Components/body";
 import BodyTwo from "./Components/lowerb";
 import Landingtwo from "./Components/Landingtwo";
+import Footer from "./Components/footer";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <Body />
             <Landingtwo></Landingtwo>
             <BodyTwo />
+            <Footer />
         </div>
     );
 }

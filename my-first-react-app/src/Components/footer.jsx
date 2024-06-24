@@ -1,7 +1,9 @@
 
-import gitlogo from './assets/githublogo.png'; 
+import gitlogo from '../assets/githublogo.png'; 
 import iraplogo from './assets/iraplogo.png'; 
 import './Footer.css'; // Import the CSS file
+
+export default function Footer() {
 
 function Footer() {
     return (
@@ -24,4 +26,4 @@ function Footer() {
     );
 }
 
-export default Footer;
+}
