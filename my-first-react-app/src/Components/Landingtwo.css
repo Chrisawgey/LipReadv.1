@@ -8,13 +8,14 @@
         #ffffff 0%,
         rgba(255, 255, 255, 0) 100%
     ); /* White gradient on bottom */
-    background: linear-gradient(
-        to right,
-        var(--aquamarine) 0%,
-        var(--blend-color-1) 25%,
-        var(--blend-color-2) 50%,
-        var(--blend-color-3) 75%,
-        var(--neon-pink) 100%
+
+    background-image: linear-gradient(
+        to bottom,
+        #847ffb,
+        #8b74ff,
+        #9467ff,
+        #a057ff,
+        #ad42ff
     );
     border-radius: 50px;
     padding-top: 100px;
