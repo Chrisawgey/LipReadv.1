@@ -1,16 +1,10 @@
+import "./footer.css"; // Import the CSS file
 
-import gitlogo from './assets/githublogo.png'; 
-import iraplogo from './assets/iraplogo.png'; 
-import './Footer.css'; // Import the CSS file
-
-function Footer() {
+export default function Footer() {
     return (
         <footer className="footer">
             <div className="container">
-                <div className="logo-container">
-                    <img src={gitlogo} alt="GitHub Logo" className="logo" />
-                    <img src={iraplogo} alt="IRAP Logo" className="logo" />
-                </div>
+                <div className="logo-container"></div>
                 <div className="contact-info">
                     <h3>Get in Touch</h3>
                     <p>Email: example@example.com</p>
@@ -23,5 +17,3 @@ function Footer() {
         </footer>
     );
 }
-
-export default Footer;
