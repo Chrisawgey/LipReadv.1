@@ -19,9 +19,8 @@
     position: sticky;
     top: 6rem;
     border: 1px solid #ccc;
-    width: 320px;
-  }
-  
+    width: 290px;
+}
 
 /* Styles for each navbar item */
 #bodyTwo .bodyTwo-nav-item {
@@ -39,59 +38,111 @@
     color: rgb(0, 0, 0); /* White text when active */
 }
 
-
 #bodyTwo .bodyTwo-content {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
 #bodyTwo .bodyTwo-text-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex: 1;
     padding: 10px 0; /* Adjusted padding */
-    max-width: 100px;
-    text-align: center; /* Center align text */
-    /* background: #f0f0f0; */ /* Remove or comment out this line */
+    max-width: 50%; /* Ensure the text container takes up half the space */
+    text-align: left; /* Align text to the left */
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
 }
-
 
 #bodyTwo .bodyTwo-image-container {
     flex: 1;
     position: sticky;
-    top: 60px;
-    max-width: 600px;
-    height: 400px;
+    top: 100px;
+    max-width: 50%; /* Ensure the image container takes up half the space */
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 999;
+    
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; 
+    background: rgb(255, 255, 255); 
+    padding-top: 70px;
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
 }
 
 #bodyTwo .bodyTwo-image-container img {
     max-width: 100%;
     max-height: 100%;
     display: block;
-    margin-top: 300px;
-    margin-left: 500px;
+    margin: 0; /* Remove margins */
+    border-radius: 15px; /* Matching the container's border radius */
 }
 
 #bodyTwo .bodyTwo-text-section {
-    height: 100vh;
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
+    height: 50vh;
+    padding: 60px 60px 60px 200px; /* Adjusted left padding */
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the left */
+    text-align: left; /* Align text to the left */
+    box-sizing: border-box; /* Ensure padding is included in the width calculation */
 }
 
 #bodyTwo .bodyTwo-text-section h2 {
     color: #111f68;
-    font-size: 36px; /* Adjusted font size */
+    font-size: 2rem; /* Use responsive units */
     font-weight: 600;
     margin-bottom: 20px; /* Adjusted margin */
 }
 
 #bodyTwo .bodyTwo-text-section p {
     color: #333;
-    font-size: 20px; /* Adjusted font size */
+    font-size: 1.125rem; /* Use responsive units */
     line-height: 1.5;
+    margin: 0; /* Ensures there is no extra margin around paragraphs */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    #bodyTwo {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    #bodyTwo .bodyTwo-navbar {
+        width: 100%;
+        justify-content: center; /* Center navbar items */
+    }
+
+    #bodyTwo .bodyTwo-content {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    #bodyTwo .bodyTwo-text-container, 
+    #bodyTwo .bodyTwo-image-container {
+        max-width: 100%;
+        padding: 10px 0; /* Adjust padding for smaller screens */
+        position: static; /* Make images static */
+        height: auto; /* Adjust height */
+    }
+
+    #bodyTwo .bodyTwo-text-section {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    #bodyTwo .bodyTwo-text-section h2 {
+        font-size: 1.5rem; /* Reduce font size */
+    }
+
+    #bodyTwo .bodyTwo-text-section p {
+        font-size: 1rem; /* Reduce font size */
+    }
 }

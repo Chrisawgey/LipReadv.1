@@ -13,7 +13,7 @@ export default function BodyTwo() {
         const handleScroll = () => {
             const sectionTop = section.offsetTop;
             const scrollY = window.scrollY;
-            const sectionHeight = window.innerHeight;
+            const sectionHeight = window.innerHeight * 0.5; // 50vh in pixels
 
             if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight * 4) {
                 const currentSectionIndex = Math.floor((scrollY - sectionTop) / sectionHeight) + 1;
