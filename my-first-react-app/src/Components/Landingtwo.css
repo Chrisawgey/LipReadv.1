@@ -1,0 +1,64 @@
+.landingtwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        rgba(255, 255, 255, 0) 100%
+    ); /* White gradient on bottom */
+    background: linear-gradient(
+        to right,
+        var(--aquamarine) 0%,
+        var(--blend-color-1) 25%,
+        var(--blend-color-2) 50%,
+        var(--blend-color-3) 75%,
+        var(--neon-pink) 100%
+    );
+    border-radius: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.landingtwo h1 {
+    text-align: center;
+    font-size: 3rem;
+    width: 700px;
+    text-wrap: wrap;
+    margin-bottom: 40px;
+}
+.landingtwo button {
+    background-color: white;
+    color: black;
+}
+.square-container {
+    display: flex;
+    flex-direction: column;
+}
+.square-section {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.square {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+.square-container > .square-section:first-child > .square:last-child {
+    width: 500px;
+}
+.square-container > .square-section:last-child > .square:first-child {
+    width: 500px;
+    margin-left: auto;
+}
+.square-container h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.square-container p {
+    font-size: 1.3rem;
+}
