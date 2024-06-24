@@ -30,7 +30,7 @@ export default function BodyTwo() {
 
     return (
         <div id="bodyTwo" className="bodyTwo">
-            <div className="bodyTwo-header">Placeholder this is an example</div>
+            <div className="bodyTwo-header">Your Centered Header Text</div>
             <nav className="bodyTwo-navbar">
                 <div className={`bodyTwo-nav-item ${currentSection === 1 ? 'active' : ''}`}>Example</div>
                 <div className={`bodyTwo-nav-item ${currentSection === 2 ? 'active' : ''}`}>Example</div>
@@ -52,7 +52,7 @@ export default function BodyTwo() {
                     </section>
                 </div>
                 <div className="bodyTwo-image-container">
-                    <img src={images[currentSection - 1]} alt={`Example ${currentSection}`} />
+                    <img key={currentSection} src={images[currentSection - 1]} alt={`Example ${currentSection}`} />
                 </div>
             </div>
         </div>

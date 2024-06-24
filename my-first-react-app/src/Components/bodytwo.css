@@ -90,6 +90,17 @@
     display: block;
     margin: 0; /* Remove margins */
     border-radius: 15px; /* Matching the container's border radius */
+    opacity: 0; /* Initial opacity for fade-in effect */
+    animation: fadeIn 0.5s forwards; /* Apply fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 #bodyTwo .bodyTwo-text-section {
