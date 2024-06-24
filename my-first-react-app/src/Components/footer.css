@@ -1,0 +1,43 @@
+.footer {
+    background-color: rgb(17, 31, 104);
+    color: rgb(225, 255, 37);
+    padding: 40px 0; /* Increase padding to make the footer taller */
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; /* Add some spacing to the right of the logos */
+}
+
+.logo {
+    width: 50px; /* Adjust the size of the logos as needed */
+    height: auto;
+    margin-bottom: 10px; /* Add some spacing between the logos */
+}
+
+.contact-info, .address-info {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.contact-info h3, .address-info h3 {
+    margin-bottom: 10px;
+    font-size: 24px; /* Increase the font size for headers */
+}
+
+.contact-info p, .address-info p {
+    margin: 5px 0;
+    font-size: 18px; /* Increase the font size for paragraphs */
+}
