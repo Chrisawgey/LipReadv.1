@@ -30,6 +30,7 @@ export default function BodyTwo() {
 
     return (
         <div id="bodyTwo" className="bodyTwo">
+            <div className="bodyTwo-header">Placeholder this is an example</div>
             <nav className="bodyTwo-navbar">
                 <div className={`bodyTwo-nav-item ${currentSection === 1 ? 'active' : ''}`}>Example</div>
                 <div className={`bodyTwo-nav-item ${currentSection === 2 ? 'active' : ''}`}>Example</div>

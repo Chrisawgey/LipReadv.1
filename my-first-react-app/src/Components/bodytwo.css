@@ -5,6 +5,15 @@
     padding-right: 5%;
 }
 
+/* Styles for the new header text */
+#bodyTwo .bodyTwo-header {
+    text-align: center;
+    font-size: 2rem;
+    color: #111f68;
+    margin-bottom: 20px; /* Space between header and navbar */
+}
+
+
 /* Styles for the sticky navbar */
 #bodyTwo .bodyTwo-navbar {
     z-index: 1;
