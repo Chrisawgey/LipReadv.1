@@ -8,6 +8,14 @@
     background-color: white;
     color: var(--dark-blue);
 }
+
+#logo img {
+    margin-left: 40px;
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+
 .left {
     display: flex;
     gap: 40px;
@@ -179,6 +187,8 @@ button {
     top: 0;
     left: 0;
     animation-duration: 2s;
+    margin-top: 130px;
+    margin-left: 100px;
 }
 .image-container img.fade-out {
     animation-name: fadeOut;

@@ -8,7 +8,8 @@
 /* Styles for the new header text */
 #bodyTwo .bodyTwo-header {
     text-align: center;
-    font-size: 2rem;
+    font-size: 48px;
+    font-weight: 600;
     color: #111f68;
     margin-bottom: 20px; /* Space between header and navbar */
 }
@@ -28,7 +29,7 @@
     position: sticky;
     top: 6rem;
     border: 1px solid #ccc;
-    width: 290px;
+    width: 280px;
 }
 
 /* Styles for each navbar item */
@@ -64,6 +65,8 @@
     max-width: 50%; /* Ensure the text container takes up half the space */
     text-align: left; /* Align text to the left */
     box-sizing: border-box; /* Ensure padding is included in the width calculation */
+    font-size: 32px;
+    font-weight: 500;
 }
 
 #bodyTwo .bodyTwo-image-container {

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import img from "../assets/image.png";
-import img2 from "../assets/image2.png";
+import img from "../assets/playercut.jpg";
+import img2 from "../assets/lipss.png";
+import img3 from "../assets/playeruncut.png";
 import "./Landing.css";
 import logo1 from "./logos/css.svg";
 import logo2 from "./logos/html.svg";
@@ -8,8 +9,9 @@ import logo3 from "./logos/opencv.svg";
 import logo4 from "./logos/react.svg";
 import logo5 from "./logos/vite.svg";
 import logo6 from "./logos/git.svg";
+import iraplogo from "../assets/iraplogo.png";
 
-const images = [{ src: img }, { src: img2 }];
+const images = [{ src: img }, { src: img2 }, { src: img3 }];
 export default function Landing() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -27,26 +29,24 @@ export default function Landing() {
         <div className="landing">
             <nav className="nav-bar">
                 <div className="left">
-                    <div id="logo">Logo</div>
-                    <ul>
-                        <li>Section-1</li>
-                        <li>Section-2</li>
-                        <li>Section-3 </li>
-                    </ul>
+                    <div id="logo">
+                        <img src={iraplogo} alt="IRAP Logo" />
+                    </div>
+                   
                 </div>
                 <div>Hamburger</div>
             </nav>
             <section>
                 <div className="left-main-right">
                     <h2>
-                        Turn images into AI to get useful insights with no code
+                        Explore the Future of AI/ML: Unlocking Limitless Technological Possibilities
                     </h2>
                     <p>
-                        Drag-and-drop your data, do some tweaks — and voilà, a
-                        new powerful AI tool is born
+                        
+                        Discover how advanced AI/ML techniques are transforming technology and reshaping our world.
                     </p>
                     <div className="button-container">
-                        <button>Start for free</button>
+                        <button>Start Here</button>
                         <button>GitHub</button>
                     </div>
                 </div>
