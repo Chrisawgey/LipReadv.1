@@ -5,6 +5,7 @@ import Body from "./Components/body";
 import BodyTwo from "./Components/lowerb";
 import Landingtwo from "./Components/Landingtwo";
 import Footer from "./Components/footer";
+import Showcase from "./Components/Showcase";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <Landing />
             <Body />
             <Landingtwo></Landingtwo>
+            <Showcase></Showcase>
             <BodyTwo />
             <Footer />
         </div>
