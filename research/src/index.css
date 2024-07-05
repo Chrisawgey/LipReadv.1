@@ -1,0 +1,43 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: white;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+.app {
+    width: 100%;
+    height: 100%;
+}
+:root {
+    --dark-blue: #111f68;
+    --bright-blue: #042aff;
+    --light-grey: #f3f3f3;
+    --dark-grey: #9e9e9e;
+    --white: white;
+    --blue: #0725ce;
+    --neon-yellow: #e1ff25;
+    --grey: #ccc;
+    --black: black;
+    --semantic-error: #ff2055;
+    --neon-pink: #ff64da;
+    --blend-color-1: #6ef8e5;
+    --blend-color-2: #a0e9fa;
+    --blend-color-3: #5361a1;
+    --blend-color-4: #78229b;
+    --aquamarine: #0bdbeb;
+    
+}

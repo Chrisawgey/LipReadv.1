@@ -1,0 +1,72 @@
+/* src/pages/Homepage/Comps/lipread.css */
+
+/* Style for the carousel */
+.carousel .slide {
+    background: none; /* Remove background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel .control-arrow, 
+.carousel .control-next.control-arrow, 
+.carousel .control-prev.control-arrow {
+    opacity: 0.7; /* Make the arrows semi-transparent */
+    transition: opacity 0.25s ease-in-out;
+}
+
+.carousel .control-arrow:hover {
+    opacity: 1; /* Fully opaque on hover */
+}
+
+.carousel video {
+    width: 100%; /* Adjust the width to make the video smaller */
+    max-width: 1000px; /* Maximum width for larger screens */
+    height: auto;
+    border-radius: 50px; /* Border radius of 50 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+/* src/pages/Homepage/Comps/lipread.css */
+
+.nav-bar {
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border: 1px solid white;
+    background-color: white;
+    color: var(--dark-blue);
+}
+
+#logo img {
+    margin-left: 40px;
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.left {
+    display: flex;
+    gap: 20px; /* Adjust the gap between items */
+}
+
+.left ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+.left ul li .go-back-button {
+    background-color: var(--dark-blue); /* Dark blue background color */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 5px; /* Border radius */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.left ul li .go-back-button:hover {
+    background-color: #1E3A8A; /* Darker blue on hover */
+}

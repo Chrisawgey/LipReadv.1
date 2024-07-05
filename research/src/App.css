@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-bar {
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px 15px 20px;
+}
+.left {
+    display: flex;
+    gap: 40px;
+}
+.left ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+}
+
+
+  
+  
