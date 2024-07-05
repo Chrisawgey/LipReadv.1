@@ -11,17 +11,18 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <App></App>,
+        element: <App />,
         children: [
-            { path: "/", element: <Homepage></Homepage> },
-            { path: "/Lip-Reading", element: <LipReading></LipReading> },
-            { path: "/Soccer", element: <Soccer></Soccer> },
-            { path: "/Tennis", element: <Tennis></Tennis> },
+            { path: "/", element: <Homepage /> },
+            { path: "/Lip-Reading", element: <LipReading /> },
+            { path: "/Soccer", element: <Soccer /> },
+            { path: "/Tennis", element: <Tennis /> },
         ],
     },
 ]);
+
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-        <RouterProvider router={router}></RouterProvider>
-    </React.StrictMode>,
+        <RouterProvider router={router} />
+    </React.StrictMode>
 );

@@ -1,6 +1,9 @@
+import { useNavigate } from 'react-router-dom';
 import animationGif from "./comp-assets/animation.gif"; // Importing the GIF from the correct path
 
 export default function Body() {
+    const navigate = useNavigate();
+
     const centerTextStyle = {
         fontFamily: "Archivo, sans-serif", // Archivo font
         textAlign: "center", // Center align text horizontally
@@ -78,6 +81,10 @@ export default function Body() {
 
     const handleButtonHoverOut = (event) => {
         event.target.style.backgroundColor = "#1E3A8A"; // Dark blue background color on hover out
+    };
+
+    const handleButtonClick = () => {
+        navigate('/Lip-Reading');
     };
 
     return (
@@ -170,6 +177,7 @@ export default function Body() {
                 style={buttonStyle}
                 onMouseEnter={handleButtonHover}
                 onMouseLeave={handleButtonHoverOut}
+                onClick={handleButtonClick}
             >
                 Read More
             </button>

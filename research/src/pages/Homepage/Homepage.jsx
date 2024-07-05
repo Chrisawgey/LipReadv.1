@@ -11,7 +11,7 @@ export default function Homepage() {
             <Landing />
             <Body />
             <Landingtwo></Landingtwo>
-            <Showcase></Showcase>
+            <Showcase></Showcase> 
             <BodyTwo />
             <Footer />
         </div>
