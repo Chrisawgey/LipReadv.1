@@ -6,6 +6,7 @@ import BodyTwo from "./Components/lowerb";
 import Landingtwo from "./Components/Landingtwo";
 import Footer from "./Components/footer";
 import Showcase from "./Components/Showcase";
+import ImplementSection from "./Components/ImplementSection"
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
             <Body />
             <Landingtwo></Landingtwo>
             <Showcase></Showcase>
+            <ImplementSection></ImplementSection>
             <BodyTwo />
             <Footer />
         </div>
