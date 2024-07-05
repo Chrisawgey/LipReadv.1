@@ -3,7 +3,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../Homepage/Comps/lipread.css"; // Importing the custom CSS
 import videoTennis from '../Homepage/Comps/comp-assets/output_videotennis.mp4';
 import videoSoccer from '../Homepage/Comps/comp-assets/output_videosoccer.mp4';
-import logo from '../Homepage/Comps/comp-assets/iraplogo.png'; // Importing the logo
+import test from '../Homepage/Comps/comp-assets/test_video.mp4';
+import logo from '../Homepage/Comps/comp-assets/iraplogo.png'; 
 
 export default function LipReading() {
 
@@ -35,6 +36,12 @@ export default function LipReading() {
                         <div>
                             <video controls>
                                 <source src={videoSoccer} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div>
+                            <video controls>
+                                <source src={test} type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                         </div>
