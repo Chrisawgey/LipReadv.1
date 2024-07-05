@@ -12,6 +12,7 @@ export default function Homepage() {
             <Landing />
             <Body />
             <Landingtwo></Landingtwo>
+            <Showcase></Showcase>
             <ImplementSection></ImplementSection>
             <BodyTwo />
             <Footer />
