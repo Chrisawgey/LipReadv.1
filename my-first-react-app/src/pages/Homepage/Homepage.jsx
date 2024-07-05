@@ -4,6 +4,7 @@ import Showcase from "./Comps/Showcase";
 import Body from "./Comps/body";
 import BodyTwo from "./Comps/lowerb";
 import Landingtwo from "./Comps/Landingtwo";
+import ImplementSection from "./Comps/ImplementSection"
 
 export default function Homepage() {
     return (
@@ -11,7 +12,7 @@ export default function Homepage() {
             <Landing />
             <Body />
             <Landingtwo></Landingtwo>
-            <Showcase></Showcase> 
+            <ImplementSection></ImplementSection>
             <BodyTwo />
             <Footer />
         </div>
