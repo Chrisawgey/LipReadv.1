@@ -1,0 +1,71 @@
+.footer {
+    background-color: rgb(17, 31, 104);
+    color: rgb(225, 255, 37);
+    padding-top: 50px; /* Decreased top padding from 200px to 100px */
+    text-align: center;
+}
+
+.top-line {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Center elements horizontally */
+    align-items: center; /* Center elements vertically */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-top: 10px; /* Add padding to avoid overlap with the line */
+    gap: 200px; /* Add gap between the elements */
+}
+
+.tech-used {
+    display: flex;
+    flex-direction: column; /* Stack tech logos vertically */
+    align-items: center;
+    margin-bottom: 20px; /* Add spacing below the tech-used section */}
+
+.tech-used h3 {
+    margin-bottom: 10px;
+    font-size: 24px; /* Increase the font size for headers */
+}
+
+.tech-logo {
+    width: 40px; /* Adjust the size of the logos as needed */
+    height: auto;
+    margin: 10px 0; /* Add some spacing between the logos */
+}
+
+.contact-info,
+.address-info {
+    align-self: flex-start;
+    margin: 0 10px;
+}
+
+.contact-info h3,
+.address-info h3 {
+    margin-bottom: 10px;
+    font-size: 24px; /* Increase the font size for headers */
+}
+
+.contact-info p,
+.address-info p {
+    margin-bottom: 260px;
+    font-size: 18px; /* Increase the font size for paragraphs */
+}
+
+.irap {
+    width: 100px; /* Adjust the size of the logos as needed */
+    height: auto;
+    margin-bottom: 10px; /* Add some spacing between the logos */
+}
+
+.git {
+    width: 100px; /* Adjust the size of the logos as needed */
+    height: auto;
+}
