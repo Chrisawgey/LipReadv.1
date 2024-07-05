@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import Homepage from "./pages/Homepage/Homepage.jsx";
 import Tennis from "./pages/Tennis/tennis.jsx";
 import Soccer from "./pages/Soccer/Soccer.jsx";
-//import LipReading from "./pages/Lip-Reading/LipReading.jsx";
+import LipReading from "./pages/Lip-Reading/LipReading.jsx";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 

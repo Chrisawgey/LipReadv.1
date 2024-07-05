@@ -1,5 +1,3 @@
-
-import { useHistory } from 'react-router-dom';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../Homepage/Comps/lipread.css"; // Importing the custom CSS
@@ -8,11 +6,7 @@ import videoSoccer from '../Homepage/Comps/comp-assets/output_videosoccer.mp4';
 import logo from '../Homepage/Comps/comp-assets/iraplogo.png'; // Importing the logo
 
 export default function LipReading() {
-    const history = useHistory();
 
-    const goBack = () => {
-        history.push('/'); // Navigate to the homepage
-    };
 
     return (
         <div className="lip-reading">
@@ -23,9 +17,7 @@ export default function LipReading() {
                 <div className="left">
                     <ul>
                         
-                            <button className="go-back-button" onClick={goBack}>Go Back</button>
-                        
-                        {/* Additional navigation items can be added here */}
+                            
                     </ul>
                 </div>
             </nav>
