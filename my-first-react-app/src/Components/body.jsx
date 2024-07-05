@@ -1,4 +1,3 @@
-import React from "react";
 import animationGif from "../assets/animation.gif"; // Importing the GIF from the correct path
 
 export default function Body() {
