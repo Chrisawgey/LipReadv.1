@@ -1,4 +1,4 @@
-import animationGif from "../assets/animation.gif"; // Importing the GIF from the correct path
+import animationGif from "./comp-assets/animation.gif"; // Importing the GIF from the correct path
 
 export default function Body() {
     const centerTextStyle = {

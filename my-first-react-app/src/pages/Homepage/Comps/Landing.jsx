@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import img from "../assets/playercut.jpg";
-import img2 from "../assets/lipss.png";
-import img3 from "../assets/playeruncut.png";
+import img from "./comp-assets/playercut.jpg";
+import img2 from "./comp-assets/lipss.png";
+import img3 from "./comp-assets/playeruncut.png";
 import "./Landing.css";
 import logo1 from "./logos/css.svg";
 import logo2 from "./logos/html.svg";
@@ -9,7 +9,7 @@ import logo3 from "./logos/opencv.svg";
 import logo4 from "./logos/react.svg";
 import logo5 from "./logos/vite.svg";
 import logo6 from "./logos/git.svg";
-import iraplogo from "../assets/iraplogo.png";
+import iraplogo from "./comp-assets/iraplogo.png";
 
 const images = [{ src: img }, { src: img2 }, { src: img3 }];
 export default function Landing() {
@@ -32,18 +32,18 @@ export default function Landing() {
                     <div id="logo">
                         <img src={iraplogo} alt="IRAP Logo" />
                     </div>
-                   
                 </div>
                 <div>Hamburger</div>
             </nav>
             <section>
                 <div className="left-main-right">
                     <h2>
-                        Explore the Future of AI/ML: Unlocking Limitless Technological Possibilities
+                        Explore the Future of AI/ML: Unlocking Limitless
+                        Technological Possibilities
                     </h2>
                     <p>
-                        
-                        Discover how advanced AI/ML techniques are transforming technology and reshaping our world.
+                        Discover how advanced AI/ML techniques are transforming
+                        technology and reshaping our world.
                     </p>
                     <div className="button-container">
                         <button>Start Here</button>
