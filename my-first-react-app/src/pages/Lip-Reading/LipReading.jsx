@@ -7,6 +7,7 @@ import videoSoccer from '../Homepage/Comps/comp-assets/output_videosoccer.mp4';
 import test from '../Homepage/Comps/comp-assets/3trained.mp4';
 import logo from '../Homepage/Comps/comp-assets/iraplogo.png';
 import lipReadingImage from '../Homepage/Comps/comp-assets/ai.jpeg'; // Importing the image
+import gifImage from '../Homepage/Comps/comp-assets/soocer_gif.gif'; // Importing the GIF
 
 export default function LipReading() {
     useEffect(() => {
@@ -61,6 +62,16 @@ export default function LipReading() {
                 </div>
                 <div className="image-content">
                     <img src={lipReadingImage} alt="Lip Reading" />
+                </div>
+            </section>
+
+            {/* GIF Section */}
+            <section className="gif-section">
+                <div className="gif-content">
+                    <img src={gifImage} alt="Animated GIF" />
+                </div>
+                <div className="text-side">
+                    <p>Text related to the GIF goes here.</p>
                 </div>
             </section>
 
