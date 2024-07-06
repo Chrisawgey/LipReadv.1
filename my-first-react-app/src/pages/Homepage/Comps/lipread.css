@@ -25,6 +25,7 @@
     height: auto;
     border-radius: 50px; /* Border radius of 50 */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    margin-bottom: 10%;
 }
 
 /* src/pages/Homepage/Comps/lipread.css */

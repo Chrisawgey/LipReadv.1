@@ -3,7 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../Homepage/Comps/lipread.css"; // Importing the custom CSS
 import videoTennis from '../Homepage/Comps/comp-assets/output_videotennis.mp4';
 import videoSoccer from '../Homepage/Comps/comp-assets/output_videosoccer.mp4';
-import test from '../Homepage/Comps/comp-assets/test_video.mp4';
+import test from '../Homepage/Comps/comp-assets/3trained.mp4';
 import logo from '../Homepage/Comps/comp-assets/iraplogo.png'; 
 
 export default function LipReading() {
