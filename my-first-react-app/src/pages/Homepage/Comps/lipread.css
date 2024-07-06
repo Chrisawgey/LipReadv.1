@@ -72,3 +72,42 @@
     background-color: #1E3A8A; /* Darker blue on hover */
 }
 
+/* Additional styles for the about section */
+.about-lip-reading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    border-radius: 10px; /* Border radius */
+    margin: 20px 0; /* Margin to separate from other sections */
+}
+
+.about-lip-reading .text-content {
+    flex: 1;
+    margin-right: 20px; /* Space between text and image */
+}
+
+.about-lip-reading .image-content {
+    flex: 1;
+}
+
+.about-lip-reading .image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Border radius */
+}
+
+.about-lip-reading h2 {
+    color: black; /* Text color */
+    margin-bottom: 10px;
+    letter-spacing: -1.4px;
+    font-family: Inter, sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.about-lip-reading p {
+    color: rgb(121, 121, 121); /* Text color */
+}

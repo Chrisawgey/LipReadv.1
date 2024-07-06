@@ -4,11 +4,10 @@ import "../Homepage/Comps/lipread.css"; // Importing the custom CSS
 import videoTennis from '../Homepage/Comps/comp-assets/output_videotennis.mp4';
 import videoSoccer from '../Homepage/Comps/comp-assets/output_videosoccer.mp4';
 import test from '../Homepage/Comps/comp-assets/3trained.mp4';
-import logo from '../Homepage/Comps/comp-assets/iraplogo.png'; 
+import logo from '../Homepage/Comps/comp-assets/iraplogo.png';
+import lipReadingImage from '../Homepage/Comps/comp-assets/ai.jpeg'; // Importing the image
 
 export default function LipReading() {
-
-
     return (
         <div className="lip-reading">
             <nav className="nav-bar">
@@ -17,8 +16,7 @@ export default function LipReading() {
                 </div>
                 <div className="left">
                     <ul>
-                        
-                            
+                        {/* Add any menu items here */}
                     </ul>
                 </div>
             </nav>
@@ -50,8 +48,17 @@ export default function LipReading() {
                 </section>
             </div>
 
-            <h1>Lip Reading</h1>
-            <p>Content about lip reading will go here.</p>
+            {/* About Lip Reading Section */}
+            <section className="about-lip-reading">
+                <div className="text-content">
+                    <h2>A.I & ML: How it will impact the next years to come.</h2>
+                    <p>AI and ML are revolutionizing industries by boosting efficiency and personalization. They enhance healthcare, education, finance, and sports performance. They also improve tools for the deaf and blind. While promising improved quality of life and cost savings, addressing ethical concerns and data privacy is crucial.</p>
+                </div>
+                <div className="image-content">
+                    <img src={lipReadingImage} alt="Lip Reading" />
+                </div>
+            </section>
+
         </div>
     );
 }
