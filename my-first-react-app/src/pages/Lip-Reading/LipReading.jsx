@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../Homepage/Comps/lipread.css"; // Importing the custom CSS
@@ -8,6 +9,10 @@ import logo from '../Homepage/Comps/comp-assets/iraplogo.png';
 import lipReadingImage from '../Homepage/Comps/comp-assets/ai.jpeg'; // Importing the image
 
 export default function LipReading() {
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scrolls to the top of the page on component mount
+    }, []);
+
     return (
         <div className="lip-reading">
             <nav className="nav-bar">
