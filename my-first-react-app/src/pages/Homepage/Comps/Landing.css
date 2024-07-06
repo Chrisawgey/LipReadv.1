@@ -15,7 +15,6 @@
     height: auto; /* Maintain the aspect ratio */
 }
 
-
 .left {
     display: flex;
     gap: 40px;
@@ -125,7 +124,7 @@ button {
     top: 0;
     width: 250px;
     height: 100%;
-    content: "";
+    content: '';
     z-index: 2;
 }
 
@@ -198,4 +197,17 @@ button {
 .image-container img.fade-in {
     animation-name: fadeIn;
     animation-fill-mode: forwards;
+}
+
+.dropdown {
+    opacity: 0;
+    transform: translateX(100%);
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+}
+
+.dropdown.show {
+    opacity: 1;
+    transform: translate(0);
 }

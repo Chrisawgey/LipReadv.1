@@ -1,19 +1,25 @@
-import { useState, useEffect } from "react";
-import img from "./comp-assets/playercut.jpg";
-import img2 from "./comp-assets/lipss.png";
-import img3 from "./comp-assets/playeruncut.png";
-import "./Landing.css";
-import logo1 from "./logos/css.svg";
-import logo2 from "./logos/html.svg";
-import logo3 from "./logos/opencv.svg";
-import logo4 from "./logos/react.svg";
-import logo5 from "./logos/vite.svg";
-import logo6 from "./logos/git.svg";
-import iraplogo from "./comp-assets/iraplogo.png";
+import { useRef, useState, useEffect } from 'react';
+import img from './comp-assets/playercut.jpg';
+import img2 from './comp-assets/lipss.png';
+import img3 from './comp-assets/playeruncut.png';
+import './Landing.css';
+import logo1 from './logos/css.svg';
+import logo2 from './logos/html.svg';
+import logo3 from './logos/opencv.svg';
+import logo4 from './logos/react.svg';
+import logo5 from './logos/vite.svg';
+import logo6 from './logos/git.svg';
+import iraplogo from './comp-assets/iraplogo.png';
 
 const images = [{ src: img }, { src: img2 }, { src: img3 }];
 export default function Landing() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    // allow when not clicking menu it clicks off
+    const [dropMenu, setDropMenu] = useState(false);
+    const dropRef = useRef(null);
+
+    // use effect to allow clicking off dropdown menu
+    useEffect(() => {}, []);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -33,8 +39,30 @@ export default function Landing() {
                         <img src={iraplogo} alt="IRAP Logo" />
                     </div>
                 </div>
-                <div>Hamburger</div>
-            </nav>
+                <div className='dropdown-left'>
+<button onClick={() => setDropMenu(!dropMenu)}>
+                    click for menu
+                </button>
+                <div
+                    className={`dropdown ${dropMenu ? 'show' : ''}`}
+                    ref={dropRef}
+                >
+                    <div className="drop-menu">
+                        <p>Introduction</p>
+                    </div>
+                    <div className="drop-menu">
+                        <p>How it Works</p>
+                    </div>
+                    <div className="drop-menu">
+                        <p>Benefits</p>
+                    </div>
+                    <div className="drop-menu">
+                        <p>Images</p>
+                    </div>
+                </div>
+
+                </div>
+                            </nav>
             <section>
                 <div className="left-main-right">
                     <h2>
@@ -59,8 +87,8 @@ export default function Landing() {
                                 src={image.src}
                                 className={
                                     index === currentImageIndex
-                                        ? "fade-in"
-                                        : "fade-out"
+                                        ? 'fade-in'
+                                        : 'fade-out'
                                 }
                             />
                         ))}
