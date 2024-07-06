@@ -39,30 +39,29 @@ export default function Landing() {
                         <img src={iraplogo} alt="IRAP Logo" />
                     </div>
                 </div>
-                <div className='dropdown-left'>
-<button onClick={() => setDropMenu(!dropMenu)}>
-                    click for menu
-                </button>
-                <div
-                    className={`dropdown ${dropMenu ? 'show' : ''}`}
-                    ref={dropRef}
-                >
-                    <div className="drop-menu">
-                        <p>Introduction</p>
-                    </div>
-                    <div className="drop-menu">
-                        <p>How it Works</p>
-                    </div>
-                    <div className="drop-menu">
-                        <p>Benefits</p>
-                    </div>
-                    <div className="drop-menu">
-                        <p>Images</p>
+                <div className="dropdown-left">
+                    <button onClick={() => setDropMenu(!dropMenu)}>
+                        click for menu
+                    </button>
+                    <div
+                        className={`dropdown ${dropMenu ? 'show' : ''}`}
+                        ref={dropRef}
+                    >
+                        <div className="drop-menu">
+                            <p>Introduction</p>
+                        </div>
+                        <div className="drop-menu">
+                            <p>How it Works</p>
+                        </div>
+                        <div className="drop-menu">
+                            <p>Benefits</p>
+                        </div>
+                        <div className="drop-menu">
+                            <p>Images</p>
+                        </div>
                     </div>
                 </div>
-
-                </div>
-                            </nav>
+            </nav>
             <section>
                 <div className="left-main-right">
                     <h2>
