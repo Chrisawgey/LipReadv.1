@@ -53,7 +53,6 @@ export default function LipReading() {
                             </div>
                             {/* You can add more video slides here */}
                         </Carousel>
-                        <ImplementSection></ImplementSection>
                     </div>
                     <div className="carousel-text">
                         <h2>Unveiling the Power of AI: A Video Showcase</h2>
