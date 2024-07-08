@@ -28,29 +28,35 @@ export default function LipReading() {
             </nav>
 
             <div className="landing">
-                <section>
-                    {/* Video Carousel */}
-                    <Carousel showThumbs={false} infiniteLoop useKeyboardArrows autoPlay>
-                        <div>
-                            <video controls>
-                                <source src={videoTennis} type="video/mp4" />
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <div>
-                            <video controls>
-                                <source src={videoSoccer} type="video/mp4" />
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <div>
-                            <video controls>
-                                <source src={test} type="video/mp4" />
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        {/* You can add more video slides here */}
-                    </Carousel>
+                <section className="carousel-section">
+                    <div className="carousel-container">
+                        {/* Video Carousel */}
+                        <Carousel showThumbs={false} infiniteLoop useKeyboardArrows autoPlay>
+                            <div>
+                                <video controls>
+                                    <source src={videoTennis} type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div>
+                                <video controls>
+                                    <source src={videoSoccer} type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <div>
+                                <video controls>
+                                    <source src={test} type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            {/* You can add more video slides here */}
+                        </Carousel>
+                    </div>
+                    <div className="carousel-text">
+                        <h2>Unveiling the Power of AI: A Video Showcase</h2>
+                        <p>Immerse yourself in a curated selection of videos highlighting the brilliance of artificial intelligence. From in-depth analyses of soccer and tennis to groundbreaking AI projects, witness how machine learning is revolutionizing the world. Enjoy an insightful journey into the future of technology!</p>
+                    </div>
                 </section>
             </div>
 
@@ -71,8 +77,9 @@ export default function LipReading() {
                     <img src={gifImage} alt="Animated GIF" />
                 </div>
                 <div className="text-side">
-                    <p>Text related to the GIF goes here.</p>
+                    <p>One highlight showcases a snippet from a soccer AI project, demonstrating the use of YOLO v8, TensorFlow, and other advanced technologies. These tools are utilized to accurately gather game statistics and employ sophisticated clustering techniques to differentiate between team jerseys.</p>
                 </div>
+
             </section>
 
         </div>
