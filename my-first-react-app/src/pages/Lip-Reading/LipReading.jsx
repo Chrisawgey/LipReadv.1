@@ -8,6 +8,7 @@ import test from '../Homepage/Comps/comp-assets/3trained.mp4';
 import logo from '../Homepage/Comps/comp-assets/iraplogo.png';
 import lipReadingImage from '../Homepage/Comps/comp-assets/ai.jpeg'; // Importing the image
 import gifImage from '../Homepage/Comps/comp-assets/soocer_gif.gif'; // Importing the GIF
+import ImplementSection from "../Homepage/Comps/ImplementSection"
 
 export default function LipReading() {
     useEffect(() => {
@@ -52,6 +53,7 @@ export default function LipReading() {
                             </div>
                             {/* You can add more video slides here */}
                         </Carousel>
+                        <ImplementSection></ImplementSection>
                     </div>
                     <div className="carousel-text">
                         <h2>Unveiling the Power of AI: A Video Showcase</h2>
@@ -83,5 +85,6 @@ export default function LipReading() {
             </section>
 
         </div>
+        
     );
 }
