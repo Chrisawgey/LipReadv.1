@@ -1,10 +1,8 @@
-import { useState } from 'react';
-import "./Showcase.css";
-
+import { useEffect, useState } from 'react';
+import './Showcase.css';
 
 export default function Showcase() {
-
-    useState(() => {
+    useEffect(() => {
         const button1 = document.getElementById('1button');
         const button2 = document.getElementById('2button');
         const button3 = document.getElementById('3button');
@@ -41,13 +39,24 @@ export default function Showcase() {
         <div className="container-2">
             <div className="description">
                 <h1>Heading</h1>
-                <p className="paragraph-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                <p className="paragraph-6">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Suspendisse varius enim in eros elementum tristique. Duis
+                    cursus, mi quis viverra ornare, eros dolor interdum nulla,
+                    ut commodo diam libero vitae erat. Aenean faucibus nibh et
+                    justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae
+                    risus tristique posuere.
+                </p>
             </div>
             <div className="tabs">
                 <div className="tabs-menu">
-                    <button id="1button" className="tab-menu-button">Classifies images into sets</button>
-                    <button id="2button" className="tab-menu-button">Detects location and class of objects</button>
-                    <button id="3button" className="tab-menu-button">Segments instances from the rest of the image</button>
+                    <button id="1button" className="tab-menu-button">
+                        Classifies images into sets
+                    </button>
+                    <button id="2button" className="tab-menu-button">
+                        Detects location and class of objects
+                    </button>
+                    <button id="3button" className="tab-menu-button"></button>
                 </div>
                 <div className="tabs-content">
                     <div className="feature-window">
