@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 
 .nav-bar {
@@ -19,7 +20,3 @@
     list-style-type: none;
     gap: 10px;
 }
-
-
-  
-  
