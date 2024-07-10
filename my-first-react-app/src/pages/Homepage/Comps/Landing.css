@@ -199,15 +199,38 @@ button {
     animation-fill-mode: forwards;
 }
 
+.dropdown-left {
+    position: relative;
+    margin-right: 20px;
+}
 .dropdown {
+    position: absolute;
+    top: 100%; /* Position dropdown below the button */
+    left: 0;
+    width: 200px; /* Adjust width as needed */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     opacity: 0;
-    transform: translateX(100%);
+    pointer-events: none; /* Hide dropdown by default */
     transition:
         opacity 0.3s ease,
         transform 0.3s ease;
+    transform: translateY(-10px); /* Slide up initially */
 }
 
 .dropdown.show {
     opacity: 1;
-    transform: translate(0);
+    pointer-events: auto; /* Show dropdown when active */
+    transform: translateY(0);
+}
+
+.drop-menu {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.drop-menu:hover {
+    background-color: #f0f0f0; /* Highlight on hover */
 }
