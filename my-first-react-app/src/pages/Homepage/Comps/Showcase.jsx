@@ -1,10 +1,10 @@
-import { useEffect } from 'react';
+import { useState } from 'react';
 import "./Showcase.css";
 
 
 export default function Showcase() {
 
-    useEffect(() => {
+    useState(() => {
         const button1 = document.getElementById('1button');
         const button2 = document.getElementById('2button');
         const button3 = document.getElementById('3button');

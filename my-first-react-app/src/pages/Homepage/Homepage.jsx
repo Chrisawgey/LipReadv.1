@@ -14,7 +14,7 @@ export default function Homepage() {
 
             {/* <ImplementSection></ImplementSection> */}
             <BodyTwo />
-            {/* <Showcase></Showcase> */}
+            <Showcase></Showcase>
             <Footer />
         </div>
     );
