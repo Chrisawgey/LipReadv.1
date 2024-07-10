@@ -205,6 +205,7 @@ button {
 }
 .dropdown {
     position: absolute;
+    z-index: 1;
     top: 100%; /* Position dropdown below the button */
     left: 0;
     width: 200px; /* Adjust width as needed */

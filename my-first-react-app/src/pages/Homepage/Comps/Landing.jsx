@@ -19,7 +19,21 @@ export default function Landing() {
     const dropRef = useRef(null);
 
     // use effect to allow clicking off dropdown menu
-    useEffect(() => {}, []);
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if (dropRef.current && !dropRef.current.contains(event.target)) {
+                setDropMenu(false);
+            }
+        }
+        if (dropMenu) {
+            document.addEventListener('mousedown', handleClickOutside);
+        } else {
+            document.addEventListener('mousedown', handleClickOutside);
+        }
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [dropMenu]);
 
     useEffect(() => {
         const interval = setInterval(() => {
