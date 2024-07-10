@@ -103,6 +103,7 @@
 .about-lip-reading .text-content {
     flex: 1;
     margin-right: 20px; /* Space between text and image */
+    padding-left: 30px;
 }
 
 .about-lip-reading .image-content {
