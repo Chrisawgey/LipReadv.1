@@ -37,59 +37,65 @@ export default function Showcase() {
 
     return (
         <div className="container-2">
-            <div className="description">
-                <h1>Heading</h1>
-                <p className="paragraph-6">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse varius enim in eros elementum tristique. Duis
-                    cursus, mi quis viverra ornare, eros dolor interdum nulla,
-                    ut commodo diam libero vitae erat. Aenean faucibus nibh et
-                    justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae
-                    risus tristique posuere.
-                </p>
-            </div>
-            <div className="tabs">
-                <div className="tabs-menu">
-                    <button id="1button" className="tab-menu-button">
-                        Classifies images into sets
-                    </button>
-                    <button id="2button" className="tab-menu-button">
-                        Detects location and class of objects
-                    </button>
-                    <button id="3button" className="tab-menu-button"></button>
+            <div className="ShowcaseWrapper">
+                <div className="description">
+                    <h1>Heading</h1>
+                    <p className="paragraph-6">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum tristique. Duis
+                        cursus, mi quis viverra ornare, eros dolor interdum nulla,
+                        ut commodo diam libero vitae erat. Aenean faucibus nibh et
+                        justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae
+                        risus tristique posuere.
+                    </p>
                 </div>
-                <div className="tabs-content">
-                    <div className="feature-window">
-                        <div className="feature-number-1">Feature</div>
-                        <div className="feature-number-2">Feature</div>
-                        <div className="feature-number-3">Feature</div>
+                <div className="tabs">
+                    <div className="tabs-menu">
+                        <button id="1button" className="tab-menu-button">
+                            Classifies images into sets
+                        </button>
+                        <button id="2button" className="tab-menu-button">
+                            Detects location and class of objects
+                        </button>
+                        <button id="3button" className="tab-menu-button">
+                            Detects location and class of objects
+                        </button>
                     </div>
-                    <div className="tab-content-1"></div>
-                    <div className="tab-content-2"></div>
-                    <div className="tab-content-3"></div>
+                    <div className="tabs-content">
+                        <div className="feature-window">
+                            <div className="feature-number-1">Feature</div>
+                            <div className="feature-number-2">Feature</div>
+                            <div className="feature-number-3">Feature</div>
+                        </div>
+                        <div className="tab-content-1"></div>
+                        <div className="tab-content-2"></div>
+                        <div className="tab-content-3"></div>
+                    </div>
                 </div>
+                <div className="features-wrapper">
+                    <div className="feature-div">
+                        <h5>500k models trained per day</h5>
+                        <p>Python Package</p>
+                    </div>
+                    <div className="feature-div">
+                        <h5>Heading</h5>
+                        <p>Python Package</p>
+                    </div>
+                    <div className="feature-div">
+                        <h5>Heading</h5>
+                        <p>Python Package</p>
+                    </div>
+                    <div className="feature-div">
+                        <h5>Heading</h5>
+                        <p>Python Package</p>
+                    </div>
+                </div>
+                <div className="learn-button-wrapper">
+                    <button className="learn-button"> Learn More </button>
+                </div>
+
             </div>
-            <div className="features-wrapper">
-                <div className="feature-div">
-                    <h5>500k models trained per day</h5>
-                    <p>Python Package</p>
-                </div>
-                <div className="feature-div">
-                    <h5>Heading</h5>
-                    <p>Python Package</p>
-                </div>
-                <div className="feature-div">
-                    <h5>Heading</h5>
-                    <p>Python Package</p>
-                </div>
-                <div className="feature-div">
-                    <h5>Heading</h5>
-                    <p>Python Package</p>
-                </div>
-            </div>
-            <div className="learn-button-wrapper">
-                <button className="learn-button"> Learn More </button>
-            </div>
+            
         </div>
     );
 }
