@@ -1,4 +1,4 @@
-.container-2 {
+/* .container-2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6,20 +6,11 @@
     height: 80vh;
     text-align: center;
     box-sizing: border-box;
-<<<<<<< HEAD
     padding: 20px;
 }
 
 .description {
     width: 50%;
-=======
-    padding: 20px; 
-    padding-top: 250px;
-  }
-  
-  .description {
-    width: 50%; 
->>>>>>> 1bf657d0ba5f2695aebb0a6139d1dbb39a410e17
     margin-bottom: 20px;
 }
 
@@ -141,4 +132,4 @@
 
 .learn-button:hover {
     background-color: #0056b3;
-}
+} */
