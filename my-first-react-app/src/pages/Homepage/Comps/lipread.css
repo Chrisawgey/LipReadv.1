@@ -1,12 +1,10 @@
-/* src/pages/Homepage/Comps/lipread.css */
-
 /* Style for the carousel section */
 .carousel-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
-    margin-bottom: 40px;
+    padding: 30px;
+    margin-bottom: 20px;
     margin-top: 50px;
 }
 
@@ -39,15 +37,9 @@
     align-items: center;
 }
 
-.carousel .control-arrow, 
-.carousel .control-next.control-arrow, 
-.carousel .control-prev.control-arrow {
-    opacity: 0.7; /* Make the arrows semi-transparent */
-    transition: opacity 0.25s ease-in-out;
-}
-
-.carousel .control-arrow:hover {
-    opacity: 1; /* Fully opaque on hover */
+/* Hide the carousel arrows */
+.carousel .control-arrow {
+    display: none !important;
 }
 
 .carousel video {
@@ -103,6 +95,7 @@
 .about-lip-reading .text-content {
     flex: 1;
     margin-right: 20px; /* Space between text and image */
+    padding-left: 30px;
 }
 
 .about-lip-reading .image-content {
