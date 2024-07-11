@@ -184,7 +184,7 @@
     justify-content: flex-end; /* Align items to the right */
     align-items: center;
     width: 100%;
-    margin-top: 20px; /* Move the dropdown down */
+    margin-top: 1px; /* Move the dropdown down */
 }
 
 .dropdown-container label {
@@ -202,7 +202,7 @@
 .video-player {
     width: 100%;
     max-width: 800px;
-    margin-top: 20px;
+    margin-top: 1px;
 }
 
 .video-player video {
