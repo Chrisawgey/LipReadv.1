@@ -5,6 +5,11 @@ import "../Homepage/Comps/lipread.css"; // Importing the custom CSS
 import videoTennis from '../Homepage/Comps/comp-assets/output_videotennis.mp4';
 import videoSoccer from '../Homepage/Comps/comp-assets/output_videosoccer.mp4';
 import test from '../Homepage/Comps/comp-assets/3trained.mp4';
+import newVideo from '../Homepage/Comps/comp-assets/bbaf2n.mp4'; // Importing the new video
+import video1 from '../Homepage/Comps/comp-assets/bbaf3s.mp4'; // Importing additional videos
+import video2 from '../Homepage/Comps/comp-assets/bbaf4p.mp4';
+import video3 from '../Homepage/Comps/comp-assets/bbaf5a.mp4';
+import video4 from '../Homepage/Comps/comp-assets/bbal6n.mp4';
 import logo from '../Homepage/Comps/comp-assets/iraplogo.png';
 import lipReadingImage from '../Homepage/Comps/comp-assets/ai.jpeg'; // Importing the image
 import gifImage from '../Homepage/Comps/comp-assets/soocer_gif.gif'; // Importing the GIF
@@ -94,15 +99,17 @@ export default function LipReading() {
                     <label htmlFor="video-select">Choose a video:</label>
                     <select id="video-select" onChange={handleVideoChange}>
                         <option value="">Select a video</option>
-                        <option value={videoTennis}>Tennis Analysis</option>
-                        <option value={videoSoccer}>Soccer Analysis</option>
-                        <option value={test}>Test Video</option>
+                        <option value={newVideo}>BBAF2N</option>
+                        <option value={video1}>BBAF3S</option>
+                        <option value={video2}>BBAF4P</option>
+                        <option value={video3}>BBAF5A</option>
+                        <option value={video4}>BBAL6N</option>
                         {/* Add more options as needed */}
                     </select>
                 </div>
                 <div className="video-player">
                     {selectedVideo && (
-                        <video controls>
+                        <video controls key={selectedVideo}>
                             <source src={selectedVideo} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
