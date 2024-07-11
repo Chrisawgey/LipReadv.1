@@ -201,14 +201,16 @@ button {
 
 .dropdown-left {
     position: relative;
-    margin-right: 20px;
+    width: 200px;
+    display: flex;
+    justify-content: end;
 }
 .dropdown {
     position: absolute;
     z-index: 1;
-    top: 100%; /* Position dropdown below the button */
+    top: 100%;
     left: 0;
-    width: 200px; /* Adjust width as needed */
+    width: 200px;
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -234,4 +236,8 @@ button {
 
 .drop-menu:hover {
     background-color: #f0f0f0; /* Highlight on hover */
+}
+.icon {
+    width: 50px;
+    height: 50px;
 }

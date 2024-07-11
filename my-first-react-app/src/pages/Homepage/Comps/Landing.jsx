@@ -10,6 +10,7 @@ import logo4 from './logos/react.svg';
 import logo5 from './logos/vite.svg';
 import logo6 from './logos/git.svg';
 import iraplogo from './comp-assets/iraplogo.png';
+import burger from './logos/burger.svg';
 
 const images = [{ src: img }, { src: img2 }, { src: img3 }];
 export default function Landing() {
@@ -21,7 +22,8 @@ export default function Landing() {
     // use effect to allow clicking off dropdown menu
     useEffect(() => {
         function handleClickOutside(event) {
-            if (dropRef.current && !dropRef.current.contains(event.target)) {
+            if (!dropRef.current.contains(event.target)) {
+                console.log(dropMenu);
                 setDropMenu(false);
             }
         }
@@ -53,14 +55,14 @@ export default function Landing() {
                         <img src={iraplogo} alt="IRAP Logo" />
                     </div>
                 </div>
-                <div className="dropdown-left">
-                    <button onClick={() => setDropMenu(!dropMenu)}>
-                        click for menu
-                    </button>
-                    <div
-                        className={`dropdown ${dropMenu ? 'show' : ''}`}
-                        ref={dropRef}
-                    >
+                <div ref={dropRef} className="dropdown-left">
+                    <img
+                        onClick={() => setDropMenu(!dropMenu)}
+                        className="icon"
+                        src={burger}
+                        alt=""
+                    />
+                    <div className={`dropdown ${dropMenu ? 'show' : ''}`}>
                         <div className="drop-menu">
                             <p>Introduction</p>
                         </div>
