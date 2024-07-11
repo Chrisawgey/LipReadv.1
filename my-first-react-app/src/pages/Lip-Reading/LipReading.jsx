@@ -13,7 +13,6 @@ import video4 from '../Homepage/Comps/comp-assets/bbal6n.mp4';
 import logo from '../Homepage/Comps/comp-assets/iraplogo.png';
 import lipReadingImage from '../Homepage/Comps/comp-assets/ai.jpeg'; // Importing the image
 import gifImage from '../Homepage/Comps/comp-assets/soocer_gif.gif'; // Importing the GIF
-import Showcase from '../Homepage/Comps/Showcase';
 import { Link } from 'react-router-dom';
 
 export default function LipReading() {
@@ -130,20 +129,20 @@ export default function LipReading() {
 
             {/* Dropdown Video Section */}
             <section className="dropdown-video-section">
+                <div className="header-container">
+                    <h1>The Lip Reader</h1>
+                </div>
                 <div className="dropdown-container">
                     <label htmlFor="video-select">Choose a video:</label>
                     <select id="video-select" onChange={handleVideoChange}>
                         <option value="">Select a video</option>
-                        <option value={newVideo}>New Video</option>
-                        <option value={video1}>Video 1</option>
-                        <option value={video2}>Video 2</option>
-                        <option value={video3}>Video 3</option>
-                        <option value={video4}>Video 4</option>
+                        <option value={newVideo}>BBAF2N</option>
+                        <option value={video1}>BBAF3S</option>
+                        <option value={video2}>BBAF4P</option>
+                        <option value={video3}>BBAF5A</option>
+                        <option value={video4}>BBAL6N</option>
                         {/* Add more options as needed */}
                     </select>
-                </div>
-                <div className="header-container">
-                    <h1>The Lip Reader</h1>
                 </div>
                 <div className="video-player">
                     {selectedVideo && (
