@@ -130,13 +130,16 @@ export default function LipReading() {
                     <label htmlFor="video-select">Choose a video:</label>
                     <select id="video-select" onChange={handleVideoChange}>
                         <option value="">Select a video</option>
-                        <option value={newVideo}>BBAF2N</option>
-                        <option value={video1}>BBAF3S</option>
-                        <option value={video2}>BBAF4P</option>
-                        <option value={video3}>BBAF5A</option>
-                        <option value={video4}>BBAL6N</option>
+                        <option value={newVideo}>New Video</option>
+                        <option value={video1}>Video 1</option>
+                        <option value={video2}>Video 2</option>
+                        <option value={video3}>Video 3</option>
+                        <option value={video4}>Video 4</option>
                         {/* Add more options as needed */}
                     </select>
+                </div>
+                <div className="header-container">
+                    <h1>The Lip Reader</h1>
                 </div>
                 <div className="video-player">
                     {selectedVideo && (
