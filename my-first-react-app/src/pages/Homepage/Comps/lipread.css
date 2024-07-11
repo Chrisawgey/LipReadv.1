@@ -211,3 +211,22 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.gif-and-text {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: flex-start; /* Align content to the right side */
+}
+
+.gif-and-text img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.gif-and-text p {
+    font-size: 18px;
+    color: #333;
+    margin-left: 20px; /* Add some spacing between the GIF and text */
+}

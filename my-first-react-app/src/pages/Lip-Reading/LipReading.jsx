@@ -13,17 +13,42 @@ import video4 from '../Homepage/Comps/comp-assets/bbal6n.mp4';
 import logo from '../Homepage/Comps/comp-assets/iraplogo.png';
 import lipReadingImage from '../Homepage/Comps/comp-assets/ai.jpeg'; // Importing the image
 import gifImage from '../Homepage/Comps/comp-assets/soocer_gif.gif'; // Importing the GIF
+import newGifImage from '../Homepage/Comps/comp-assets/animation.gif'; // Importing the new GIF
 import { Link } from 'react-router-dom';
 
 export default function LipReading() {
     const [selectedVideo, setSelectedVideo] = useState('');
+    const [displayText, setDisplayText] = useState('');
 
     useEffect(() => {
         window.scrollTo(0, 0); // Scrolls to the top of the page on component mount
     }, []);
 
     const handleVideoChange = (event) => {
-        setSelectedVideo(event.target.value);
+        const videoValue = event.target.value;
+        setSelectedVideo(videoValue);
+
+        let text;
+        switch (videoValue) {
+            case newVideo:
+                text = 'This is a description for BBAF2N.';
+                break;
+            case video1:
+                text = 'This is a description for BBAF3S.';
+                break;
+            case video2:
+                text = 'This is a description for BBAF4P.';
+                break;
+            case video3:
+                text = 'This is a description for BBAF5A.';
+                break;
+            case video4:
+                text = 'This is a description for BBAL6N.';
+                break;
+            default:
+                text = '';
+        }
+        setDisplayText(text);
     };
 
     return (
@@ -69,7 +94,6 @@ export default function LipReading() {
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
-                            {/* You can add more video slides here */}
                         </Carousel>
                     </div>
                     <div className="carousel-text">
@@ -148,6 +172,12 @@ export default function LipReading() {
                         </video>
                     )}
                 </div>
+                {selectedVideo && (
+                    <div className="gif-and-text">
+                        <img src={newGifImage} alt="GIF" />
+                        <p>{displayText}</p>
+                    </div>
+                )}
             </section>
         </div>
     );

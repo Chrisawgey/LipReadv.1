@@ -14,7 +14,7 @@
         #ad42ff
     );
     color: white;
-    padding-top: 100px;
+    padding-top: 120px;
     text-align: center;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
@@ -53,4 +53,21 @@ p {
     width: 100px; /* Adjust the size of the logos as needed */
     height: auto;
     margin-top: 10px; /* Add some spacing above the logo */
+}
+
+.gif-and-text {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.gif-and-text img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.gif-and-text p {
+    font-size: 18px;
+    color: #333;
 }
