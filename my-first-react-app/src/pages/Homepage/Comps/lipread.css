@@ -121,7 +121,7 @@
     color: rgb(121, 121, 121); /* Text color */
 }
 
-/* Existing styles for the GIF section */
+/* Style for the GIF section */
 .gif-section {
     display: flex;
     align-items: center;
@@ -159,9 +159,9 @@
     align-items: center;
     padding: 20px;
     margin-top: 20px;
-    background-color: white;
+    background: linear-gradient(to bottom, white, black);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    color: white; 
 }
 
 .header-container {
@@ -171,7 +171,7 @@
 }
 
 .header-container h1 {
-    color: black; /* Text color */
+    color: rgb(84, 84, 84); /* Text color */
     margin-bottom: 1px;
     letter-spacing: -1.4px;
     font-family: Inter, sans-serif;
@@ -190,6 +190,7 @@
 .dropdown-container label {
     font-size: 16px;
     margin-right: 10px; /* Space between the label and the dropdown */
+    color: rgb(84, 84, 84); /* Label text color */
 }
 
 .dropdown-container select {
@@ -199,10 +200,18 @@
     border: 1px solid #ccc;
 }
 
-.video-player {
+.video-player-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the content */
+    align-items: flex-start;
     width: 100%;
+    margin-top: 20px;
+}
+
+.video-player {
+    width: 60%; /* Adjust width to make space for the GIF and text */
     max-width: 800px;
-    margin-top: 1px;
 }
 
 .video-player video {
@@ -214,19 +223,47 @@
 
 .gif-and-text {
     display: flex;
-    align-items: center;
-    margin-top: 20px;
-    justify-content: flex-start; /* Align content to the right side */
+    flex-direction: column; /* Stack GIF and text vertically */
+    align-items: flex-start; /* Align items to the left */
+    justify-content: flex-end; /* Align content to the bottom */
+    width: 35%; /* Adjust width to fit the available space */
+    margin-left: 60px; /* Space between video and GIF/text */
+    margin-top: 180px;
 }
 
 .gif-and-text img {
-    width: 150px;
+    width: 100%; /* Adjust width to fit container */
     height: auto;
-    margin-right: 20px;
+    margin-bottom: 10px; /* Space between GIF and text */
 }
 
 .gif-and-text p {
-    font-size: 18px;
-    color: #333;
-    margin-left: 20px; /* Add some spacing between the GIF and text */
+    font-size: 20px; /* Increase font size */
+    text-align: center; /* Center the text */
+    color: white; /* Text color */
+    margin-top: 50px; /* Space above the text to move it down */
+    margin-left: 120px; /* Space to move text to the right */
+}
+
+/* Style for the How Does It Work section */
+.how-does-it-work {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.how-does-it-work-container {
+    max-width: 800px; /* Adjust the max-width as needed */
+    width: 100%;
+}
+
+.how-does-it-work h2 {
+    font-size: 36px; /* Adjust the font size as needed */
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+    color: inherit; /* Inherit color from parent */
 }

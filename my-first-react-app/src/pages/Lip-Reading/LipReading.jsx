@@ -31,19 +31,19 @@ export default function LipReading() {
         let text;
         switch (videoValue) {
             case newVideo:
-                text = 'This is a description for BBAF2N.';
+                text = 'Output: Bin Blue At F 2 Now';
                 break;
             case video1:
-                text = 'This is a description for BBAF3S.';
+                text = 'Output: Bin Blue Af 3 Soon';
                 break;
             case video2:
-                text = 'This is a description for BBAF4P.';
+                text = 'Output: Bin Blue F 4 Please';
                 break;
             case video3:
-                text = 'This is a description for BBAF5A.';
+                text = 'Output: Bin Blue At F 5 K';
                 break;
             case video4:
-                text = 'This is a description for BBAL6N.';
+                text = 'Output: Bin Blue Al 6 Now';
                 break;
             default:
                 text = '';
@@ -164,21 +164,31 @@ export default function LipReading() {
                         {/* Add more options as needed */}
                     </select>
                 </div>
-                <div className="video-player">
+                <div className="video-player-container">
+                    <div className="video-player">
+                        {selectedVideo && (
+                            <video controls key={selectedVideo}>
+                                <source src={selectedVideo} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        )}
+                    </div>
                     {selectedVideo && (
-                        <video controls key={selectedVideo}>
-                            <source src={selectedVideo} type="video/mp4" />
-                            Your browser does not support the video tag.
-                        </video>
+                        <div className="gif-and-text">
+                            <img src={newGifImage} alt="GIF" />
+                            <p>{displayText}</p>
+                        </div>
                     )}
                 </div>
-                {selectedVideo && (
-                    <div className="gif-and-text">
-                        <img src={newGifImage} alt="GIF" />
-                        <p>{displayText}</p>
-                    </div>
-                )}
             </section>
+
+            {/* How Does It Work Section */}
+            <section className="how-does-it-work">
+                <div className="how-does-it-work-container">
+                    <h2>How does it work?</h2>
+                </div>
+            </section>
+
         </div>
     );
 }
