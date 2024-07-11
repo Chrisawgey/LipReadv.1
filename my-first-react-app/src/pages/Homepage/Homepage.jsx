@@ -34,7 +34,7 @@ export default function Homepage() {
             <div ref={bodyTwoRef}>
                 <BodyTwo />
             </div>
-            <Showcase></Showcase>
+            {/* <Showcase></Showcase> */}
             <Footer />
         </div>
     );

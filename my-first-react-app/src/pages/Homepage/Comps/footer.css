@@ -1,71 +1,53 @@
 .footer {
-    background-color: rgb(17, 31, 104);
-    color: rgb(225, 255, 37);
-    padding-top: 50px; /* Decreased top padding from 200px to 100px */
-    text-align: center;
-}
+    background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        rgba(255, 255, 255, 0) 100%
+    ); /* White gradient on bottom */
 
-.top-line {
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    position: absolute;
-    top: 0;
+    background-image: linear-gradient(
+        to bottom,
+        #847ffb,
+        #8b74ff,
+        #9467ff,
+        #a057ff,
+        #ad42ff
+    );
+    color: white;
+    padding-top: 50px;
+    text-align: center;
 }
 
 .container {
     display: flex;
-    justify-content: center; /* Center elements horizontally */
-    align-items: center; /* Center elements vertically */
+    justify-content: space-between; /* Distribute the three sections evenly */
+    align-items: flex-start; /* Align items to the start vertically */
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
-    padding-top: 10px; /* Add padding to avoid overlap with the line */
-    gap: 200px; /* Add gap between the elements */
+    padding-bottom: 50px;
+    gap: 40px; /* Add gap between the sections */
 }
 
-.tech-used {
-    display: flex;
-    flex-direction: column; /* Stack tech logos vertically */
-    align-items: center;
-    margin-bottom: 20px; /* Add spacing below the tech-used section */}
-
-.tech-used h3 {
-    margin-bottom: 10px;
-    font-size: 24px; /* Increase the font size for headers */
-}
-
-.tech-logo {
-    width: 40px; /* Adjust the size of the logos as needed */
-    height: auto;
-    margin: 10px 0; /* Add some spacing between the logos */
-}
-
-.contact-info,
-.address-info {
-    align-self: flex-start;
+.contributors,
+.github,
+.about {
+    flex: 1; /* Ensure all sections take up equal width */
     margin: 0 10px;
 }
 
-.contact-info h3,
-.address-info h3 {
+h3 {
     margin-bottom: 10px;
     font-size: 24px; /* Increase the font size for headers */
+    border-bottom: 2px solid white;
 }
 
-.contact-info p,
-.address-info p {
-    margin-bottom: 260px;
+p {
+    margin-bottom: 10px;
     font-size: 18px; /* Increase the font size for paragraphs */
-}
-
-.irap {
-    width: 100px; /* Adjust the size of the logos as needed */
-    height: auto;
-    margin-bottom: 10px; /* Add some spacing between the logos */
 }
 
 .git {
     width: 100px; /* Adjust the size of the logos as needed */
     height: auto;
+    margin-top: 10px; /* Add some spacing above the logo */
 }
