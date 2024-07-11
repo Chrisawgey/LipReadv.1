@@ -40,7 +40,7 @@ export default function LipReading() {
                 text = 'Output: Bin Blue F 4 Please';
                 break;
             case video3:
-                text = 'Output: Bin Blue At F 5 K';
+                text = 'Output: Bin Blue At F 5 Again';
                 break;
             case video4:
                 text = 'Output: Bin Blue Al 6 Now';
