@@ -151,3 +151,43 @@
     line-height: 1.6; /* Adjust line height */
     font-family: Inter, sans-serif;
 }
+
+/* Style for the dropdown video section */
+.dropdown-video-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.dropdown-container {
+    margin-bottom: 20px;
+}
+
+.dropdown-container label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.dropdown-container select {
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.video-player {
+    width: 100%;
+    max-width: 800px;
+}
+
+.video-player video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

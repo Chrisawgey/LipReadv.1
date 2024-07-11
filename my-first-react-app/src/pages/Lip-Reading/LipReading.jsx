@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "../Homepage/Comps/lipread.css"; // Importing the custom CSS
@@ -8,12 +8,18 @@ import test from '../Homepage/Comps/comp-assets/3trained.mp4';
 import logo from '../Homepage/Comps/comp-assets/iraplogo.png';
 import lipReadingImage from '../Homepage/Comps/comp-assets/ai.jpeg'; // Importing the image
 import gifImage from '../Homepage/Comps/comp-assets/soocer_gif.gif'; // Importing the GIF
-import ImplementSection from "../Homepage/Comps/ImplementSection"
+import Showcase from "../Homepage/Comps/Showcase"
 
 export default function LipReading() {
+    const [selectedVideo, setSelectedVideo] = useState('');
+
     useEffect(() => {
         window.scrollTo(0, 0); // Scrolls to the top of the page on component mount
     }, []);
+
+    const handleVideoChange = (event) => {
+        setSelectedVideo(event.target.value);
+    };
 
     return (
         <div className="lip-reading">
@@ -80,10 +86,29 @@ export default function LipReading() {
                 <div className="text-side">
                     <p>One highlight showcases a snippet from a soccer AI project, demonstrating the use of YOLO v8, TensorFlow, and other advanced technologies. These tools are utilized to accurately gather game statistics and employ sophisticated clustering techniques to differentiate between team jerseys.</p>
                 </div>
-
             </section>
 
+            {/* Dropdown Video Section */}
+            <section className="dropdown-video-section">
+                <div className="dropdown-container">
+                    <label htmlFor="video-select">Choose a video:</label>
+                    <select id="video-select" onChange={handleVideoChange}>
+                        <option value="">Select a video</option>
+                        <option value={videoTennis}>Tennis Analysis</option>
+                        <option value={videoSoccer}>Soccer Analysis</option>
+                        <option value={test}>Test Video</option>
+                        {/* Add more options as needed */}
+                    </select>
+                </div>
+                <div className="video-player">
+                    {selectedVideo && (
+                        <video controls>
+                            <source src={selectedVideo} type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                    )}
+                </div>
+            </section>
         </div>
-        
     );
 }
