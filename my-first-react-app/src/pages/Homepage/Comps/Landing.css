@@ -208,7 +208,7 @@ button {
 .dropdown {
     position: absolute;
     z-index: 1;
-    top: 100%;
+    top: 60%;
     left: 0;
     width: 200px;
     background-color: white;
@@ -238,6 +238,6 @@ button {
     background-color: #f0f0f0; /* Highlight on hover */
 }
 .icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
