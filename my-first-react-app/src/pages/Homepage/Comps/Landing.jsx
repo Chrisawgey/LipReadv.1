@@ -11,9 +11,15 @@ import logo5 from './logos/vite.svg';
 import logo6 from './logos/git.svg';
 import iraplogo from './comp-assets/iraplogo.png';
 import burger from './logos/burger.svg';
+import Landingtwo from './Landingtwo';
 
 const images = [{ src: img }, { src: img2 }, { src: img3 }];
-export default function Landing() {
+export default function Landing({
+    scrollToSection,
+    bodyRef,
+    landingTwoRef,
+    bodyTwoRef,
+}) {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     // allow when not clicking menu it clicks off
     const [dropMenu, setDropMenu] = useState(false);
@@ -63,16 +69,22 @@ export default function Landing() {
                         alt=""
                     />
                     <div className={`dropdown ${dropMenu ? 'show' : ''}`}>
-                        <div className="drop-menu">
-                            <p>Introduction</p>
-                        </div>
-                        <div className="drop-menu">
+                        <div
+                            className="drop-menu"
+                            onClick={() => scrollToSection(bodyRef)}
+                        >
                             <p>How it Works</p>
                         </div>
-                        <div className="drop-menu">
-                            <p>Benefits</p>
+                        <div
+                            className="drop-menu"
+                            onClick={() => scrollToSection(landingTwoRef)}
+                        >
+                            <p>Use cases</p>
                         </div>
-                        <div className="drop-menu">
+                        <div
+                            className="drop-menu"
+                            onClick={() => scrollToSection(bodyTwoRef)}
+                        >
                             <p>Images</p>
                         </div>
                     </div>
