@@ -16,6 +16,8 @@
     color: white;
     padding-top: 50px;
     text-align: center;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 
 .container {
@@ -25,6 +27,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding-bottom: 50px;
+
     gap: 40px; /* Add gap between the sections */
 }
 
