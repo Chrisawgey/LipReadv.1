@@ -34,11 +34,7 @@ export default function LipReading() {
                         <img src={logo} alt="IRAP Logo" />
                     </Link>
                 </div>
-                <div className="left">
-                    <ul>{/* Add any menu items here */}</ul>
-                </div>
             </nav>
-
             <div className="landing">
                 <section className="carousel-section">
                     <div className="carousel-container">
