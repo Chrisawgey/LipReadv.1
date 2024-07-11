@@ -190,7 +190,7 @@
 .dropdown-container label {
     font-size: 16px;
     margin-right: 10px; /* Space between the label and the dropdown */
-    color: rgb(84, 84, 84); /* Label text color */
+    color: rgb(154, 154, 154); /* Label text color */
 }
 
 .dropdown-container select {
@@ -266,4 +266,5 @@
     font-weight: bold;
     margin: 0; /* Remove default margin */
     color: inherit; /* Inherit color from parent */
+    font-family: Inter, sans-serif;
 }
