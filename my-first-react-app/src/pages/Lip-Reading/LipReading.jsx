@@ -15,17 +15,18 @@ import lipReadingImage from '../Homepage/Comps/comp-assets/ai.jpeg'; // Importin
 import gifImage from '../Homepage/Comps/comp-assets/soocer_gif.gif'; // Importing the GIF
 import newGifImage from '../Homepage/Comps/comp-assets/animation.gif'; // Importing the new GIF
 import { Link } from 'react-router-dom';
+import VideoModal from './VideoModal'; // Import the VideoModal component
 
 export default function LipReading() {
     const [selectedVideo, setSelectedVideo] = useState('');
     const [displayText, setDisplayText] = useState('');
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     useEffect(() => {
         window.scrollTo(0, 0); // Scrolls to the top of the page on component mount
     }, []);
 
-    const handleVideoChange = (event) => {
-        const videoValue = event.target.value;
+    const handleVideoChange = (videoValue) => {
         setSelectedVideo(videoValue);
 
         let text;
@@ -49,6 +50,15 @@ export default function LipReading() {
                 text = '';
         }
         setDisplayText(text);
+        setIsModalOpen(false); // Close the modal after selecting a video
+    };
+
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
     };
 
     return (
@@ -72,19 +82,13 @@ export default function LipReading() {
                         >
                             <div>
                                 <video controls>
-                                    <source
-                                        src={videoTennis}
-                                        type="video/mp4"
-                                    />
+                                    <source src={videoTennis} type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
                             <div>
                                 <video controls>
-                                    <source
-                                        src={videoSoccer}
-                                        type="video/mp4"
-                                    />
+                                    <source src={videoSoccer} type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
@@ -99,12 +103,7 @@ export default function LipReading() {
                     <div className="carousel-text">
                         <h2>Unveiling the Power of AI: A Video Showcase</h2>
                         <p>
-                            Immerse yourself in a curated selection of videos
-                            highlighting the brilliance of artificial
-                            intelligence. From in-depth analyses of soccer and
-                            tennis to groundbreaking AI projects, witness how
-                            machine learning is revolutionizing the world. Enjoy
-                            an insightful journey into the future of technology!
+                            Immerse yourself in a curated selection of videos highlighting the brilliance of artificial intelligence. From in-depth analyses of soccer and tennis to groundbreaking AI projects, witness how machine learning is revolutionizing the world. Enjoy an insightful journey into the future of technology!
                         </p>
                     </div>
                 </section>
@@ -113,16 +112,9 @@ export default function LipReading() {
             {/* About Lip Reading Section */}
             <section className="about-lip-reading">
                 <div className="text-content">
-                    <h2>
-                        A.I & ML: How it will impact the next years to come.
-                    </h2>
+                    <h2>A.I & ML: How it will impact the next years to come.</h2>
                     <p>
-                        AI and ML are revolutionizing industries by boosting
-                        efficiency and personalization. They enhance healthcare,
-                        education, finance, and sports performance. They also
-                        improve tools for the deaf and blind. While promising
-                        improved quality of life and cost savings, addressing
-                        ethical concerns and data privacy is crucial.
+                        AI and ML are revolutionizing industries by boosting efficiency and personalization. They enhance healthcare, education, finance, and sports performance. They also improve tools for the deaf and blind. While promising improved quality of life and cost savings, addressing ethical concerns and data privacy is crucial.
                     </p>
                 </div>
                 <div className="image-content">
@@ -137,12 +129,7 @@ export default function LipReading() {
                 </div>
                 <div className="text-side">
                     <p>
-                        One highlight showcases a snippet from a soccer AI
-                        project, demonstrating the use of YOLO v8, TensorFlow,
-                        and other advanced technologies. These tools are
-                        utilized to accurately gather game statistics and employ
-                        sophisticated clustering techniques to differentiate
-                        between team jerseys.
+                        One highlight showcases a snippet from a soccer AI project, demonstrating the use of YOLO v8, TensorFlow, and other advanced technologies. These tools are utilized to accurately gather game statistics and employ sophisticated clustering techniques to differentiate between team jerseys.
                     </p>
                 </div>
             </section>
@@ -153,16 +140,7 @@ export default function LipReading() {
                     <h1>The Lip Reader</h1>
                 </div>
                 <div className="dropdown-container">
-                    <label htmlFor="video-select">Choose a video:</label>
-                    <select id="video-select" onChange={handleVideoChange}>
-                        <option value="">Select a video</option>
-                        <option value={newVideo}>BBAF2N</option>
-                        <option value={video1}>BBAF3S</option>
-                        <option value={video2}>BBAF4P</option>
-                        <option value={video3}>BBAF5A</option>
-                        <option value={video4}>BBAL6N</option>
-                        {/* Add more options as needed */}
-                    </select>
+                    <button onClick={openModal}>Select Video</button>
                 </div>
                 <div className="video-player-container">
                     <div className="video-player">
@@ -189,6 +167,7 @@ export default function LipReading() {
                 </div>
             </section>
 
+            {isModalOpen && <VideoModal handleVideoChange={handleVideoChange} closeModal={closeModal} />}
         </div>
     );
 }
